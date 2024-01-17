@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/moments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MomentsActivity">
+
+    <Button
+        android:id="@+id/button_moment_post"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/add_post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_momentbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_moment_post"
+        app:srcCompat="@drawable/momentbg" />
+
+    <TextView
+        android:id="@+id/textView_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="16dp"
+
+        android:text="@string/user_name"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_user"
+        app:layout_constraintTop_toBottomOf="@+id/iv_momentbg" />
+
+    <ImageView
+        android:id="@+id/imageView_user"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/touxiang" />
+
+    <RelativeLayout
+        android:id="@+id/moments_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_username"
+        tools:layout_editor_absoluteX="16dp">
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/touxiang2" />
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_user"
+            android:text="@string/ico_name1"
+            android:textColor="#576B95" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_userName"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_user"
+
+            android:text="@string/moments_p1_content1" />
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_content"
+            android:layout_marginTop="8dp"
+
+            android:layout_toRightOf="@id/iv_user"
+            android:adjustViewBounds="true"
+            android:nestedScrollingEnabled="false"
+            android:src="@drawable/momentim01" />
+
+        <TextView
+            android:id="@+id/tv_totalLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView1"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/iv_user"
+            android:text="@string/ico_time1"
+            android:textColor="#9A9A9A" />
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/imageView1"
+            android:layout_marginTop="4dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_thumb_up_black_24dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/moments_all"
+        tools:layout_editor_absoluteX="19dp">
+
+        <ImageView
+            android:id="@+id/ico2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/touxiang3" />
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ico2"
+            android:text="@string/ico_name2"
+            android:textColor="#576B95" />
+
+        <TextView
+            android:id="@+id/content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name2"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/ico2"
+
+            android:text="@string/ico_content2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content2"
+            android:layout_marginTop="8dp"
+
+            android:layout_toRightOf="@id/ico2"
+            android:adjustViewBounds="true"
+            android:nestedScrollingEnabled="false"
+            android:src="@drawable/momentim02" />
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/ico2"
+            android:text="@string/ico_time2"
+            android:textColor="#9A9A9A" />
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="35dp"-->
+        <!--            android:layout_height="35dp"-->
+        <!--            android:layout_below="@id/imageView2"-->
+        <!--            android:layout_marginTop="4dp"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:src="@mipmap/ic_thumb_up_black_48dp" />-->
+
+    </RelativeLayout>
+
+    <!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout_moment_post"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView_username">-->
+
+<!--        &lt;!&ndash;        <ScrollView&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_height="match_parent">&ndash;&gt;-->
+
+<!--        &lt;!&ndash;            <ListView&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:id="@+id/lv_moment"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:layout_height="match_parent" />&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        </ScrollView>&ndash;&gt;-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/moment_iv_p1"-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            app:srcCompat="@drawable/touxiang2" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/mine_textView_p1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="Kobe Bryant" />-->
+<!--    </LinearLayout>-->
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

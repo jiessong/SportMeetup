@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/moments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MineActivity">
+
+    <!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:id="@+id/minebarrier"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        app:barrierDirection="bottom"-->
+
+<!--        app:constraint_referenced_ids="imageView_mine_user"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:layout_editor_absoluteX="230dp" />-->
+
+
+    <TextView
+        android:id="@+id/tv_mine_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/user_name"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_myAppointment"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:text="@string/my_appointment"-->
+<!--        android:textSize="24dp"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/iv_mine_app"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_mine_username" />-->
+
+    <TextView
+        android:id="@+id/tv_friendsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_friendsList"
+        android:textSize="24dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_mine_friends"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_mine_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mine_bg1" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_mine_bg"
+        app:srcCompat="@drawable/touxiang1" />
+
+    <TextView
+        android:id="@+id/tv_mine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_mine"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_mine_bg" />
+
+    <ImageButton
+        android:id="@+id/imageButton_setting"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_settings_black_48dp" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_mine_app"-->
+<!--        android:layout_width="88dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="188dp"-->
+
+<!--        android:adjustViewBounds="true"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/iv_mine_bg"-->
+<!--        app:srcCompat="@mipmap/group_icon" />-->
+
+    <ImageView
+        android:id="@+id/iv_mine_friends"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="452dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/group_icon2" />
+
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/constraintLayout"-->
+<!--        android:layout_width="409dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/browser_actions_bg_grey"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView_mine_user">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/mine_tv_appointment"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:text="@string/mine_tv_appointment"-->
+<!--            android:textSize="24sp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView"-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="180dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/mine_tv_appointment"-->
+<!--            app:srcCompat="@drawable/court1" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/mine_court_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="88dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:text="@string/court_name"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/mine_iv_location"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/mine_court_name"-->
+<!--            app:srcCompat="@mipmap/ic_room_black_24dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/mine_tv_location"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:text="@string/mine_tv_location"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/mine_iv_location"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/mine_court_name" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/mine_btn_leave"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:text="@string/btn_leave"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/mine_tv_location" />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="409dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="@color/browser_actions_bg_grey"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"-->
+<!--        tools:layout_editor_absoluteX="1dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/mine_tv_appointment2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:text="@string/mine_tv_appointment"-->
+<!--            android:textSize="24sp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView2"-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="180dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/mine_tv_appointment2"-->
+<!--            app:srcCompat="@drawable/court3" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/mine_court_name2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="88dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:text="@string/court_name"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView2"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/mine_iv_location2"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView2"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/mine_court_name2"-->
+<!--            app:srcCompat="@mipmap/ic_room_black_24dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/mine_tv_location2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:text="@string/mine_tv_location"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/mine_iv_location2"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/mine_court_name2" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/mine_btn_leave2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:text="@string/btn_leave"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView2"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/mine_tv_location2" />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/browser_actions_bg_grey">
+
+
+    <ImageView
+        android:id="@+id/imageView_court2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/court2" />
+
+    <TextView
+        android:id="@+id/groupup_court_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/court_name"
+        android:textSize="16sp"
+
+        app:layout_constraintStart_toEndOf="@+id/imageView_court2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/groupup_iv_location"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_court2"
+        app:layout_constraintTop_toBottomOf="@+id/groupup_court_name"
+        app:srcCompat="@mipmap/ic_room_black_24dp" />
+
+    <TextView
+        android:id="@+id/groupup_tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/mine_tv_location"
+        app:layout_constraintStart_toEndOf="@+id/groupup_iv_location"
+        app:layout_constraintTop_toBottomOf="@+id/groupup_court_name" />
+
+    <ImageView
+        android:id="@+id/groupup_iv_time"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_court2"
+        app:layout_constraintTop_toBottomOf="@+id/groupup_tv_location"
+        app:srcCompat="@mipmap/ic_alarm_black_24dp" />
+
+    <TextView
+        android:id="@+id/groupup_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/mine_tv_time"
+        app:layout_constraintStart_toEndOf="@+id/groupup_iv_location"
+        app:layout_constraintTop_toBottomOf="@+id/groupup_tv_location" />
+
+    <Button
+        android:id="@+id/groupup_btn_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/btn_join"
+        app:layout_constraintStart_toEndOf="@+id/imageView_court2"
+        app:layout_constraintTop_toBottomOf="@+id/groupup_tv_time" />
+
+    <Button
+        android:id="@+id/groupup_btn_leave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/btn_leave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupup_tv_time" />
+
+    <Switch
+        android:id="@+id/joinLeave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/switch_leave"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

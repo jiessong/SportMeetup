@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/im_appointment_court"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/court3" />
+
+    <TextView
+        android:id="@+id/mine_court_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/activity_name"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/im_appointment_court"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mine_iv_location"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/im_appointment_court"
+        app:layout_constraintTop_toBottomOf="@+id/mine_court_name"
+        app:srcCompat="@mipmap/ic_room_black_24dp" />
+
+    <ImageView
+        android:id="@+id/mine_iv_location3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/im_appointment_court"
+        app:layout_constraintTop_toBottomOf="@+id/mine_iv_location"
+        app:srcCompat="@mipmap/ic_room_black_24dp" />
+
+    <TextView
+        android:id="@+id/mine_tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/mine_tv_location"
+        app:layout_constraintStart_toEndOf="@+id/mine_iv_location"
+        app:layout_constraintTop_toBottomOf="@+id/mine_court_name" />
+
+    <TextView
+        android:id="@+id/mine_tv_location3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/mine_tv_location"
+        app:layout_constraintStart_toEndOf="@+id/mine_iv_location"
+        app:layout_constraintTop_toBottomOf="@+id/mine_tv_location" />
+
+    <Button
+        android:id="@+id/btn_appointment_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_join"
+        app:layout_constraintStart_toEndOf="@+id/im_appointment_court"
+        app:layout_constraintTop_toBottomOf="@+id/mine_iv_location3" />
+
+    <Button
+        android:id="@+id/mine_btn_leave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btn_leave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mine_iv_location3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

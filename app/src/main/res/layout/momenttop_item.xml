@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/momenttop_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/browser_actions_bg_grey">
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/touxiang2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/iv_user"
+        android:text="@string/ico_name1"
+        android:textColor="#576B95"
+        android:textSize="24dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_user"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_userName"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/iv_user"
+        android:text="@string/moments_p1_content1"
+        app:layout_constraintStart_toEndOf="@+id/iv_user"
+        app:layout_constraintTop_toBottomOf="@+id/tv_userName" />
+
+    <Button
+        android:id="@+id/button_follow"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/tv_userName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <Switch-->
+<!--        android:id="@+id/switch_block"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:text="@string/block"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/iv_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toRightOf="@id/iv_user"
+        android:adjustViewBounds="true"
+        android:nestedScrollingEnabled="false"
+        android:padding="8dp"
+        android:src="@drawable/momentim01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user" />
+
+    <ImageView
+        android:id="@+id/iv_like"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/iv_post"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:src="@mipmap/ic_thumb_up_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_post" />
+
+    <ImageView
+        android:id="@+id/iv_coment"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/iv_post"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:src="@mipmap/ic_aspect_ratio_black_24dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_totalLike"
+        app:layout_constraintTop_toBottomOf="@+id/iv_post" />
+
+    <ImageView
+        android:id="@+id/iv_retweet"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/iv_post"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:src="@mipmap/ic_launch_black_24dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_totalcomment"
+        app:layout_constraintTop_toBottomOf="@+id/iv_post" />
+
+    <TextView
+        android:id="@+id/tv_totalLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_post"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/iv_user"
+        android:text="@string/ico_totalLike"
+        android:textColor="#9A9A9A"
+        app:layout_constraintStart_toEndOf="@+id/iv_like"
+        app:layout_constraintTop_toBottomOf="@+id/iv_post" />
+
+    <TextView
+        android:id="@+id/tv_totalcomment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_post"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/iv_user"
+        android:text="@string/tv_totalcomment"
+        android:textColor="#9A9A9A"
+        app:layout_constraintStart_toEndOf="@+id/iv_coment"
+        app:layout_constraintTop_toBottomOf="@+id/iv_post" />
+
+    <TextView
+        android:id="@+id/tv_totalRetweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_post"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/iv_user"
+        android:text="@string/tv_totalRe"
+        android:textColor="#9A9A9A"
+        app:layout_constraintStart_toEndOf="@+id/iv_retweet"
+        app:layout_constraintTop_toBottomOf="@+id/iv_post" />
+
+    <Button
+        android:id="@+id/btn_item_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
